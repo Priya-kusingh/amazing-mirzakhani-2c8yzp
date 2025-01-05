@@ -1,0 +1,196 @@
+.about-section {
+  padding: 20px;
+  /* background-color: black; */
+  /* margin: 10px 40px; */
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  flex-wrap: flex-wrap;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-content {
+  flex: 1;
+  padding-left: 2rem;
+}
+.columns {
+  /* max-width: 800px; */
+  margin-left: 0 auto;
+}
+
+.columns h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+}
+
+.about-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  /* text-align: center; */
+  color: black;
+}
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.about-content h3 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+_______________grid 4column___________________ 
+
+
+
+/* Container for the entire layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* Upper row with text animation (right to left) */
+.upper-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  margin-bottom: 0px;
+  overflow: hidden; /* To hide the text once it moves out of the container */
+}
+
+.moving-text {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+  animation: moveText 10s linear infinite; /* Animation effect */
+}
+
+/* Keyframes for the text animation (right to left) */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+/* Second row with four columns */
+.second-row {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 20px; */
+  /* Space between columns */
+}
+
+.second-row .column {
+  flex: 1 1 calc(25% - 20px); /* 4 columns with space between them */
+  /* background-color: #e8e8e8; */
+  padding: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* font-size: 1.5rem; */
+}
+.second-row .column:hover {
+  transform: translateY(-8px);
+  background-color: black;
+  color: white;
+  height: 280px;
+  text-align: center;
+  padding: 75px;
+}
+.column h1 {
+  font-size: 2.5rem;
+  /* line-height: 2.5rem; */
+  margin-bottom: 20px;
+}
+.column h3 {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+/* our placed students */
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  /* background-color:; */
+}
+
+.slide {
+  position: relative;
+  text-align: center;
+}
+
+.slide-image {
+  width: 100%;
+  height: 200px;
+  max-width: 290px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 47%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.caption h3 {
+  font-size: 1 rem;
+  margin: 0;
+}
+
+.caption p {
+  font-size: 1 rem;
+  margin: 5px 0 0;
+}
+/* For tablets and smaller screens (1024px or below) */
+@media (max-width: 1024px) {
+  .second-row .column {
+    flex: 1 1 calc(50% - 20px); /* 2 columns per row */
+  }
+
+  .moving-text {
+    font-size: 2rem; /* Adjust text size on smaller screens */
+  }
+}
+
+/* For mobile devices (768px or below) */
+@media (max-width: 768px) {
+  .second-row .column {
+    flex: 1 1 100%; /* 1 column per row */
+  }
+
+  .moving-text {
+    font-size: 1.5rem; /* Further reduce text size on mobile */
+  }
+}
