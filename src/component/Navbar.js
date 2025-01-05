@@ -19,7 +19,7 @@ class Navbar extends Component {
           <nav>
             <a>
               <h2>
-                Tech <span>Mentor</span>
+                Tech <span>Mentors</span>
               </h2>
             </a>
             <div>
