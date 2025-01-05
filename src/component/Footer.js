@@ -10,13 +10,8 @@ const Footer = () => {
         {/* About Section */}
         <div className="footer-section about">
           <h2>
-            Tech <span>Mentor</span>
+            Tech <span>Mentors</span>
           </h2>
-          {/* <img
-            src="https://via.placeholder.com/150" // Add your logo source here
-            alt="Shining Future Technologies"
-            className="footer-logo"
-          /> */}
           <p>
             Tech Mentor India’s training programs are designed in sync with
             current industry trends and job openings in MNCs.
